@@ -1,3 +1,4 @@
 * https://github.com/twbs/bootstrap.git
 * v3.3.6
 * Folder `boostrap/less/**`
+* Include `custom-variables.less` at end of `variables.less`
