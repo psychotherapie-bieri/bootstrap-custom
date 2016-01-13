@@ -1,9 +1,25 @@
 @import "../bootstrap/variables.less";
-h1{
-	border: solid 1px gray;
-	padding: 5px;
+
+// Bootstrap overrides (cannot be customized by simple variables)
+
+.navbar .nav > li > a {
+  outline: none;
 }
-p{
-	text-decoration: underline;
-	font-weight: bold;
+
+.navbar .nav > li.active > a {
+  border-bottom: 3px solid @custom-blue;
+}
+
+.navbar-collapse.collapsing > ul > li > a {
+  font-size: @navbar-collapse-collapsing-font-size;
+  border-bottom: 0;
+}
+
+.navbar-collapse.collapsing > ul > li.active > a {
+  border-bottom: 0;
+}
+
+.navbar-collapse.collapse.in > ul > li > a {
+  font-size: @navbar-collapse-collapsing-font-size;
+  border-bottom: 0;
 }
